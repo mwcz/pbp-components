@@ -28,7 +28,7 @@ export default class PbpLoading extends HTMLElement {
             left: 0;
             border: var(--pbp-loading-border, 1px solid white);
             border-width: $WIDTH;
-            animation: $DIM ${duration}s forwards alternate infinite;
+            animation: $DIM ${duration}s backwards alternate infinite;
             animation-delay: var(--delay);
             animation-play-state: var(--play-state);
         `;
