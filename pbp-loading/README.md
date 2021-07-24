@@ -20,7 +20,15 @@ A bare-bones, square-ish, loading bar.  Web Component.
 <pbp-loading duration=1></pbp-loading>
 ```
 
-**Customize the appearance**
+**Start paused, ie: don't automatically start the animation**
+
+_Note: adding this attribute later does not pause the animation, but `.pause()` does._
+
+```html
+<pbp-loading paused></pbp-loading>
+```
+
+## CSS
 
 ```html
 <style>

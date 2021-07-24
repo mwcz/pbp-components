@@ -10,6 +10,7 @@ export default class PbpLoading extends HTMLElement {
         this.style.setProperty("--play-state", "paused");
     }
     connectedCallback() {
+        const startPaused = this.hasAttribute("paused");
         const boxCount = +this.getAttribute("box-count") || 4;
         const duration = +this.getAttribute("duration") || (Math.sqrt(boxCount / 4));
         const boxes = new Array(boxCount).fill();
@@ -35,7 +36,7 @@ export default class PbpLoading extends HTMLElement {
             <style>
                 :host {
                     display: inline-block;
-                    --play-state: running;
+                    --play-state: ${startPaused ? "paused" : "running"};
                 }
                 div {
                     display: grid;
