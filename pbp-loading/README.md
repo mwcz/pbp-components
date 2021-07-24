@@ -2,6 +2,8 @@
 
 A bare-bones, square-ish, loading bar.  Web Component.
 
+## Attributes
+
 **Only defaults**
 
 ```html
@@ -41,3 +43,7 @@ pbp-loading {
 </style>
 <pbp-loading></pbp-loading>
 ```
+
+## JS
+
+This element has two methods, `play()` and `pause()`.
