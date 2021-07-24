@@ -50,7 +50,7 @@ export default class PbpLoading extends HTMLElement {
                 }
                 @keyframes x {
                   0% {
-                      transform: scaleX(var(--pbp-loading-stretch, 150%));
+                      transform: scaleX(var(--pbp-loading-grow, 150%));
                       opacity: 0;
                   }
                   ${p}% {
@@ -60,7 +60,7 @@ export default class PbpLoading extends HTMLElement {
                 }
                 @keyframes y {
                   0% {
-                      transform: scaleY(var(--pbp-loading-stretch, 150%));
+                      transform: scaleY(var(--pbp-loading-grow, 150%));
                       opacity: 0;
                   }
                   ${p}% {
