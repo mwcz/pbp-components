@@ -1,9 +1,9 @@
 {
   "name": "@mwcz/pbp-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/pbp-loading.js",
   "scripts": {
-      "build": "esbuild pbp-loading.js --legal-comments=linked --outdir=dist --minify --bundle --splitting --format=esm --sourcemap=external"
+    "build": "esbuild pbp-loading.js --legal-comments=linked --outdir=dist --minify --bundle --splitting --format=esm --sourcemap=external"
   },
   "files": [
     "dist"
