@@ -1,12 +1,18 @@
 {
-  "name": "pbp-loading",
+  "name": "@mwcz/pbp-loading",
   "version": "1.0.0",
   "main": "dist/pbp-loading.js",
+  "scripts": {
+      "build": "esbuild pbp-loading.js --legal-comments=linked --outdir=dist --minify --bundle --splitting --format=esm --sourcemap=external"
+  },
   "files": [
     "dist"
   ],
   "license": "MIT",
   "devDependencies": {
     "esbuild": "^0.12.15"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
