@@ -1,0 +1,12 @@
+{
+  "name": "pbp-loading",
+  "version": "1.0.0",
+  "main": "dist/pbp-loading.js",
+  "files": [
+    "dist"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.12.15"
+  }
+}
